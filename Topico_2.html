@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title> Tutorial CSS </title>
+        <style>
+            h1{
+                font-family: Arial;
+                font-size:30;
+                color:blue; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1> CSS Sintaxe e Seletores </h1>
+        <i><h2> - Sintaxe CSS </h2></i>
+        <p>
+            Um conjunto de regras CSS consiste em um seletor e um bloco de declaração:
+    
+        </p>
+        <p> 
+            <ul> 
+                <li> O seletor aponta para o elemento HTML que você deseja estilizar.</li>
+                <li> O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</li>
+                <li> Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.</li>
+                <li> Uma declaração CSS sempre termina com um ponto-e-vírgula e os blocos de declaração são cercados por chaves.</li>
+                <li> No exemplo a seguir, todos os elementos <spam> <p></p> </spam> serão alinhados ao centro, com uma cor de texto vermelha:</li>
+            </ul>
+            <p>Exemplo:</p>
+                <pre xmt>
+                    p{
+                        color: red;
+                        text-aling: center;
+                    }
+            
+                </pre>
+        <i><h2> - Seletores de CSS: </h2></i>
+    <p> Os seletores CSS são usados para "localizar" (ou selecionar) elementos HTML com base no nome, ID, classe, atributo e mais do elemento.</p></br>
+    <i><h2> -O elemento Selector</h2></i>
+    <p>O seletor de elemento seleciona elementos com base no nome do elemento.
+    <p>Você pode selecionar todos os elementos <p> em uma página como essa (nesse caso, todos os elementos <p> serão alinhados ao centro, com uma cor de texto vermelha):</p></br>
+    <p> Exemplo: </p>
+        <pre xmt>
+        p {
+            text-align: center;
+            color: red;
+        }
+        
+        </pre>
+    <i><h2> - O seletor de id:</h2></i>
+    <p>
+        <ul> 
+            <li> O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico.</li>
+            <li> O id de um elemento deve ser único dentro de uma página, então o seletor de id é usado para selecionar um elemento único!</li>
+            <li>Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido pelo id do elemento.</li>
+            <li>A regra de estilo abaixo será aplicada ao elemento HTML com id = "para1":</li>
+
+        </ul>
+    <p> Exemplo: </p>
+        <pre cmt>
+        #para1 {
+            text-align: center;
+            color: red;
+        }
+        
+        </pre>
+        <p><b> Nota:</b>Um nome de id não pode começar com um número!</p>
+    <i><h2> - O seletor de classe: </h2></i>
+    <p>
+        <ul> 
+            <li>O seletor de classe seleciona elementos com um atributo de classe específico. </li>
+            <li> Para selecionar elementos com uma classe específica, escreva um caractere de ponto (.), Seguido do nome da classe.</li>
+            <li>No exemplo abaixo, todos os elementos HTML com class = "center" serão vermelhos e alinhados ao centro: </li>
+        </ul>
+    <p> Exemplo:</p>
+        <pre xmt>
+        .center {
+            text-align: center;
+            color: red;
+        }
+        
+        </pre>
+    <p>Você também pode especificar que somente elementos HTML específicos devem ser afetados por uma classe.
+        No exemplo abaixo, apenas os elementos "p" com class = "center" serão centralizados:</p></br>
+    <p> Exemplo:</p>
+        <pre xmt>
+        p.center {
+            text-align: center;
+            color: red;
+        }
+
+        </pre>
+    <p> Elementos HTML também podem se referir a mais de uma classe.No exemplo abaixo, o elemento "p" será estilizado de acordo com class = "center" e class = "large":</p></br>
+    <p> Exemplo: </p>
+        <pre xmt>
+            <spam><p class="center large">This paragraph refers to two classes.</p></spam>
+        </pre>
+        <p><b>Nota:</b>Um nome de classe não pode começar com um número!</p>
+    <i><h2>- Seletores de agrupamento:</h2></i>
+    <p>Se você tiver elementos com as mesmas definições de estilo, assim:</p>
+    <p>Exemplo:</p>
+        <pre xmt>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+        }
+
+        p {
+            text-align: center;
+            color: red;
+        }
+        
+        </pre>
+    <p>
+        <ul>
+            <li>Será melhor agrupar os seletores para minimizar o código.</li>
+            <li>Para agrupar seletores, separe cada seletor com uma vírgula.</li>
+            <li>No exemplo abaixo, agrupamos os seletores do código acima:</li>
+
+        </ul>
+    <p> Exemplo:</p>
+        <pre xmt>
+        h1, h2, p {
+            text-align: center;
+            color: red;
+            }
+         
+        </pre>
+    <i><b>- Comentários CSS:</b></i>
+    <p>Os comentários são usados para explicar o código e podem ajudar quando você editar o código-fonte em uma data posterior.</br>
+Comentários são ignorados pelos navegadores.</br>
+    Um comentário CSS começa com / * e termina com * /. Comentários também podem abranger várias linhas:</p></br>
+    <p> Exemplo:</p>
+        <pre xmt>
+        p {
+            color: red;
+            /* This is a single-line comment */
+            text-align: center;
+        }
+
+            /* This is
+            a multi-line
+            comment */
+        
+        </pre>
+
+
+
+
+
+    
+
+
+
+
+
+<spam><</spam>
+
+
+
+
+       
+
+
+    
+            
+            
+        
+    
+    
+    
+    
+    
